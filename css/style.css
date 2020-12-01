@@ -158,6 +158,7 @@ p{
 .searFiltItem:hover {
   background-color: #0065FC;
   color: white;
+  border-color: #DEEBFF;
 }
 .searFiltItemWrap {
   background-color: #DEEBFF;
