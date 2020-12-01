@@ -127,3 +127,52 @@ p{
   font-size: 1rem;
   cursor: pointer;
 }
+
+
+.searFilters {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.searFiltTitle {
+  margin: 0 2rem 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.searFiltItem {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  border: 2px solid #d9d9d9;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+.searFiltItem:last-child {
+  margin-right: 0;
+}
+.searFiltItem:hover {
+  background-color: #0065FC;
+  color: white;
+}
+.searFiltItemWrap {
+  background-color: #DEEBFF;
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+  min-height: 3.5rem;
+  min-width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2px;
+}
+.searFiltItemWrapIcon{
+  color: #0065FC;
+}
+.searFiltItemText {
+  margin: 0 1rem;
+}
