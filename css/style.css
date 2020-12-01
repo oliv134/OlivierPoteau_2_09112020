@@ -21,7 +21,7 @@ h1 {
   font-size: 2.2ch;
 }
 h2 {
-  font-size: 2ch;
+  font-size: 1.8ch;
 }
 h3 {
   font-size: 1ch;
@@ -143,11 +143,12 @@ p{
 .searFiltItem {
   display: flex;
   align-items: center;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   margin-bottom: 1rem;
   border: 2px solid #d9d9d9;
   border-radius: 2rem;
-  font-weight: bold;
+  font-size: 1.8ch;
+  font-weight: 700;
   cursor: pointer;
   transition-duration: 0.1s;
 }
@@ -163,8 +164,8 @@ p{
   border-radius: 100%;
   height: 3rem;
   width: 3rem;
-  min-height: 3.5rem;
-  min-width: 3.5rem;
+  min-height: 2rem;
+  min-width: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
