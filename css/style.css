@@ -177,3 +177,46 @@ p{
 .searFiltItemText {
   margin: 0 1rem;
 }
+
+.searResult {
+  display: inline-flex;
+  align-items: center;
+  
+}
+
+.searResuWrap {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  border: solid 1px  #d9d9d9;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+}
+.searResuWrapIcon {
+  color: #0065FC;
+}
+
+.hosting{
+    display: grid;
+    column-count: 2rem;
+    grid-template-columns: 6fr 3fr;
+}
+.hostResults { 
+    background-color: #f2f2f2;
+    border-radius: 1em;
+}
+.hostResuCards {
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.hostResuCardItemRatiIcon[data-active=false] {
+    color: #d9d9d9;
+}
+.hostResuCardItemRatiIcon[data-active=true] {
+    color: #0065FC;
+}
