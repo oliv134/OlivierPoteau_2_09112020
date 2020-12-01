@@ -27,16 +27,22 @@
 
 
   <main class="main">
-    <h1 class="title">Trouvez votre hébergement pour des vacances de rêves</h1>
-    En plein centre ville ou en pleine nature
-    <section> <!-- Recherche -->
+
+    <section class="mainSearch"> <!-- Recherche -->
     
       <header>
-        <!-- Slogant-->
+        <h1 class="mainSearTitle">Trouvez votre hébergement pour des vacances de rêves</h1>
+        En plein centre ville ou en pleine nature
       </header>
     
-      <form action="">
-        <!-- Champ de recherche -->
+      <form class="mainSearForm" action ='#'>
+        <span class="mainSearFormWrap">
+            <i class="fas fa-map-marker-alt mainSearFormWrapIcon"></i>
+        </span>
+        <input class="mainSearFormInput_city" type="search" placeholder="Marseille, France" name="city">
+        <button class="mainSearFormSubmit">
+            <span class="mainSearFormSubmText">Rechercher</span>
+        </button>
       </form>
     
       <div>
