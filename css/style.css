@@ -3,3 +3,76 @@ body {
   margin: 0;
   padding: 0;
 }
+
+ul {
+  list-style:none;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  color: unset;
+}
+
+h1 {
+  font-size: 2ch;
+}
+h2 {
+  font-size: 2ch;
+}
+h3 {
+  font-size: 1ch;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+.header, .main {
+  max-width: 1340px;
+  margin:auto;
+}
+.header {
+  
+  display: flex;
+  justify-content: space-between;
+  flex-direction : row;
+  align-items: flex-start;
+  vertical-align: auto;
+
+}
+.logo{
+  height: 1.8125rem;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+}
+
+.headNavigation {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.headNaviMenu{    
+  display: flex; 
+  flex-direction : row;
+}
+
+.headNaviSignup, .headNaviMenuItem {
+  border-top: 2px solid transparent;
+  padding-top: 3.125rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+
+.headNaviMenuItem:hover, .headNaviSignup:hover, .headNaviMenuItem[data-active=true] {
+  border-top: 2px solid#0065FC;
+  color: #0065FC;
+}
+
+.title {
+  margin-top: 0rem;
+}

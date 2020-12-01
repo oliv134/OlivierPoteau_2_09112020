@@ -30,4 +30,11 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
 
 
 - Choix des images
-  Les Images contenues dans le dossier 4x_sont de taille suffisante pour ce projet. Elles ont été renommées et place dans leur dossiers respectifs (hosts, activities)
+  Les Images contenues dans le dossier 4x sont de taille suffisante pour ce projet. Elles ont été renommées et place dans leur dossiers respectifs (hosts, activities).
+  Le logo est recoupé selon son contenu.
+
+La largeur du corps est de 1340px
+<head>
+  <nav> contient le logo, le menu de navigation et le lien d'inscription
+  C'est une flexbox space-between
+  Hauteur du logo 29px / 16 = 1.8125rem
