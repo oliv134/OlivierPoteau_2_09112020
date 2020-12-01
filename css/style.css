@@ -135,7 +135,7 @@ p{
   flex-wrap: wrap;
 }
 .searFiltTitle {
-  margin: 0 2rem 1rem 0;
+  margin: 0 2rem 1rem 1rem;
   display: flex;
   align-items: center;
 }
