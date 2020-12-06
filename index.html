@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/40f67a93c2.js" crossorigin="anonymous"></script>
   <title>Réservia</title>
 </head>
+
 <body>
   <header>
     <header class="header">
@@ -17,196 +20,254 @@
       </a>
 
       <nav class="headNavigation">
-          <ul class="headNaviMenu">
-              <li><a class="headNaviMenuItem" href="#" data-active="true">Hébergements</a></li>
-              <li><a class="headNaviMenuItem" href="#" data-active="false">Activités</a></li>
-          </ul>
-          <a class="headNaviSignup" href="#">S'inscire</a>
+        <ul class="headNaviMenu">
+          <li><a class="headNaviMenuItem" href="#" data-active="true">Hébergements</a></li>
+          <li><a class="headNaviMenuItem" href="#" data-active="false">Activités</a></li>
+        </ul>
+        <a class="headNaviSignup" href="#">S'inscire</a>
       </nav>
-  </header>
+    </header>
 
 
-  <main class="main">
+    <main class="main">
 
-    <section class="mainSearch"> <!-- Recherche -->
-    
-      <header>
-        <h1 class="mainSearTitle">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-      </header>
-    
-      <form class="mainSearForm" action ='#'>
-        <span class="mainSearFormWrap">
+      <section class="mainSearch">
+        <!-- Recherche -->
+
+        <header>
+          <h1 class="mainSearTitle">Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre ville ou en pleine nature</p>
+        </header>
+
+        <form class="mainSearForm" action='#'>
+          <span class="mainSearFormWrap">
             <i class="fas fa-map-marker-alt mainSearFormWrapIcon"></i>
-        </span>
-        <input class="mainSearFormInput_city" type="search" placeholder="Marseille, France" name="city">
-        <button class="mainSearFormSubmit">
+          </span>
+          <input class="mainSearFormInput_city" type="search" placeholder="Marseille, France" name="city">
+          <button class="mainSearFormSubmit">
             <span class="mainSearFormSubmText">Rechercher</span>
-        </button>
-      </form>
-    
-      <div class="searFilters" role="option">
-        <h2 class="searFiltTitle">Filtres</h2>
-        
-        <div class="searFiltItem">
+          </button>
+        </form>
+
+        <div class="searFilters" role="option">
+          <h2 class="searFiltTitle">Filtres</h2>
+
+          <div class="searFiltItem">
             <div class="searFiltItemWrap">
-                <i class="fas fa-money-bill-wave searFiltItemWrapIcon"></i>
+              <i class="fas fa-money-bill-wave searFiltItemWrapIcon"></i>
             </div>
             <span class="searFiltItemText">Économique</span>
-        </div>
+          </div>
 
-        <div class="searFiltItem">
+          <div class="searFiltItem">
             <div class="searFiltItemWrap">
-                <i class="fas fa-child searFiltItemWrapIcon"></i>
+              <i class="fas fa-child searFiltItemWrapIcon"></i>
             </div>
             <span class="searFiltItemText">Familial</span>
-        </div>
-        
-        <div class="searFiltItem">
+          </div>
+
+          <div class="searFiltItem">
             <div class="searFiltItemWrap">
-                <i class="fas fa-heart searFiltItemWrapIcon"></i>
+              <i class="fas fa-heart searFiltItemWrapIcon"></i>
             </div>
             <span class="searFiltItemText">Romantique</span>
-        </div>
+          </div>
 
-        <div class="searFiltItem">
+          <div class="searFiltItem">
             <div class="searFiltItemWrap">
-                <i class="fas fa-dog searFiltItemWrapIcon"></i>
+              <i class="fas fa-dog searFiltItemWrapIcon"></i>
             </div>
             <span class="searFiltItemText">Animaux autorisés</span>
+          </div>
+
         </div>
 
-    </div>
-    
-    <div class="searResult">
-      <div class="searResuWrap">
-        <i class="searResuWrapIcon fas fa-info"></i>
-      </div>
-      <p>Plus de 500 logements sont disponibles dans cette ville</p>
-  </div>
-</section>
-<span class="choice">
-</span>
-<div class="hosting">
-  <section class="hostResults"> <!-- Listes des logements -->
-      <header class="hostResuHeader"> 
-      <h2 class="hostResuHeaderTitle"></h2>Hébergement à Marseille</h2>
-      </header>
-      <section class="hostResuCards">
-          <article class="hostResuCardsItem"> <!-- Vignette du logement-->
-              <a href="#">
-                <figure class="hostResuCardsItemFigure">
-                  <img src="./pictures/hosts/host_1.jpg" alt="Vue sur la ville depuis les lits supperposés" class="hostingResultCardsItemImage">
-                  <figcaption class="d">
-                    <h3 class="hostResuCardsItemFigCText">Auberge de la Cannebière</h3>
-                  </figcaption>
-               </figure>
-                  <p class="hostResuCardsItemDescription">Nuit à partir de <span class="hostResultsCardsItemDescPrice">25€</span></p>
-                  <p class="hostResuCardsItemRating">
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="false"></i>
-                  </p>
-              </a>
-          </article>
-
-          <article class="hostResuCardsItem"> <!-- Vignette du logement-->
-              <a href="#">
-                  <img src="./pictures/hosts/host_2.jpg" alt="Chambre lumineuse aux couleurs appaisantes" class="hostingResultCardsItemImage">
-                  <h3 class="hostResuCardsItemTitle">Hôtel du port</h3>
-                  <p class="hostResuCardsItemDescription">Nuit à partir de <span class="hostResultsCardsItemDescPrice">52€</span></p>
-                  <p class="hostResuCardsItemRating">
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                  </p>
-              </a>
-          </article>
-
-          <article class="hostResuCardsItem"> <!-- Vignette du logement-->
-              <a href="#">
-                  <img src="./pictures/hosts/host_3.jpg" alt="Chambre aux couleurs chaudes" class="hostingResultCardsItemImage">
-                  <h3 class="hostResuCardsItemTitle">Hôtel les mouettes</h3>
-                  <p class="hostResuCardsItemDescription">Nuit à partir de <span class="hostResultsCardsItemDescPrice">76€</span></p>
-                  <p class="hostResuCardsItemRating">
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="false"></i>
-                  </p>
-              </a>
-          </article>
-
-          <article class="hostResuCardsItem"> <!-- Vignette du logement-->
-              <a href="#">
-                  <img src="./pictures/hosts/host_4.jpg" alt="Chambre lumineuse avec une décoration marine" class="hostingResultCardsItemImage">
-                  <h3 class="hostResuCardsItemTitle">Hauberge de la mer</h3>
-                  <p class="hostResuCardsItemDescription">Nuit à partir de <span class="hostResultsCardsItemDescPrice">45€</span></p>
-                  <p class="hostResuCardsItemRating">
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="false"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="false"></i>
-                  </p>
-              </a>
-          </article>
-
-          <article class="hostResuCardsItem"> <!-- Vignette du logement-->
-              <a href="#">
-                  <img src="./pictures/hosts/host_5.jpg" alt="Chambre ambiance bambou" class="hostingResultCardsItemImage">
-                  <h3 class="hostResuCardsItemTitle">Auberge Le Panier</h3>
-                  <p class="hostResuCardsItemDescription">Nuit à partir de <span class="hostResultsCardsItemDescPrice">23€</span></p>
-                  <p class="hostResuCardsItemRating">
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="false"></i>
-                  </p>
-              </a>
-          </article>
-
-          <article class="hostResuCardsItem"> <!-- Vignette du logement-->
-              <a href="#">
-                  <img src="./pictures/hosts/host_6.jpg" alt="Chambre sobre et lumineuse avec télévision" class="hostingResultCardsItemImage">
-                  <h3 class="hostResuCardsItemTitle">Hôtel chez Amina</h3>
-                  <p class="hostResuCardsItemDescription">Nuit à partir de <span class="hostResultsCardsItemDescPrice">96€</span></p>
-                  <p class="hostResuCardsItemRating">
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                      <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
-                  </p>
-              </a>
-          </article>
+        <div class="searResult">
+          <div class="searResuWrap">
+            <i class="searResuWrapIcon fas fa-info"></i>
+          </div>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
       </section>
-  </section>
 
-          <aside>
-            <!-- Liste des hébergements les plus populaires -->
-          </aside>
-    
-          <section>
-      <!-- Activité dans la ville -->
-    </section>
+      <span class="choice">
 
-  </main>
+      </span>
 
-  <footer>
-    <!-- A propos -->
+      <div class="hosting">
 
-    <!-- Nos hebergements -->
+        <section class="hostResults">
+          <!-- Listes des logements -->
+          <header class="hostResuHeader">
+            <h2 class="hostResuHeadTitle">Hébergement à Marseille</h2>
+          </header>
+          
+          <section class="hostResuCards">
+            <article class="hostResuCardItem">
+              <!-- Vignette du logement-->
+              <a href="#">
+                <figure class="hostResuCardItemFigure">
+                  <img src="./pictures/hosts/host_1.jpg" alt="Vue sur la ville depuis les lits supperposés"
+                    class="hostResuCardItemFiguImage">
+                  <figcaption class="hostResuCardItemFiguCaption">
+                    <h3 class="hostResuCardItemFiguCaptLabel">Auberge de la Cannebière</h3>
+                  </figcaption>
+                </figure>
+                <p class="hostResuCardItemDescription">Nuit à partir de <span
+                    class="hostResultsCardItemDescPrice">25€</span></p>
+                <p class="hostResuCardItemRating">
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="false"></i>
+                </p>
+              </a>
+            </article>
 
-    <!-- Assistance -->
-  </footer>
+            <article class="hostResuCardItem">
+              <!-- Vignette du logement-->
+              <a href="#">
+                <figure class="hostResuCardItemFigure">
+                  <img src="./pictures/hosts/host_1.jpg" alt="Vue sur la ville depuis les lits supperposés"
+                    class="hostResuCardItemFiguImage">
+                  <figcaption class="hostResuCardItemFiguCaption">
+                    <h3 class="hostResuCardItemFiguCaptLabel">Auberge de la Cannebière</h3>
+                  </figcaption>
+                </figure>
+                <p class="hostResuCardItemDescription">Nuit à partir de <span
+                    class="hostResultsCardItemDescPrice">25€</span></p>
+                <p class="hostResuCardItemRating">
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="false"></i>
+                </p>
+              </a>
+            </article>
+
+            <article class="hostResuCardItem">
+              <!-- Vignette du logement-->
+              <a href="#">
+                <figure class="hostResuCardItemFigure">
+                  <img src="./pictures/hosts/host_1.jpg" alt="Vue sur la ville depuis les lits supperposés"
+                    class="hostResuCardItemFiguImage">
+                  <figcaption class="hostResuCardItemFiguCaption">
+                    <h3 class="hostResuCardItemFiguCaptLabel">Auberge de la Cannebière</h3>
+                  </figcaption>
+                </figure>
+                <p class="hostResuCardItemDescription">Nuit à partir de <span
+                    class="hostResultsCardItemDescPrice">25€</span></p>
+                <p class="hostResuCardItemRating">
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="false"></i>
+                </p>
+              </a>
+            </article>
+
+            <article class="hostResuCardItem">
+              <!-- Vignette du logement-->
+              <a href="#">
+                <figure class="hostResuCardItemFigure">
+                  <img src="./pictures/hosts/host_1.jpg" alt="Vue sur la ville depuis les lits supperposés"
+                    class="hostResuCardItemFiguImage">
+                  <figcaption class="hostResuCardItemFiguCaption">
+                    <h3 class="hostResuCardItemFiguCaptLabel">Auberge de la Cannebière</h3>
+                  </figcaption>
+                </figure>
+                <p class="hostResuCardItemDescription">Nuit à partir de <span
+                    class="hostResultsCardItemDescPrice">25€</span></p>
+                <p class="hostResuCardItemRating">
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="false"></i>
+                </p>
+              </a>
+            </article>
+
+            <article class="hostResuCardItem">
+              <!-- Vignette du logement-->
+              <a href="#">
+                <figure class="hostResuCardItemFigure">
+                  <img src="./pictures/hosts/host_1.jpg" alt="Vue sur la ville depuis les lits supperposés"
+                    class="hostResuCardItemFiguImage">
+                  <figcaption class="hostResuCardItemFiguCaption">
+                    <h3 class="hostResuCardItemFiguCaptLabel">Auberge de la Cannebière</h3>
+                  </figcaption>
+                </figure>
+                <p class="hostResuCardItemDescription">Nuit à partir de <span
+                    class="hostResultsCardItemDescPrice">25€</span></p>
+                <p class="hostResuCardItemRating">
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="false"></i>
+                </p>
+              </a>
+            </article>
+
+            <article class="hostResuCardItem">
+              <!-- Vignette du logement-->
+              <a href="#">
+                <figure class="hostResuCardItemFigure">
+                  <img src="./pictures/hosts/host_1.jpg" alt="Vue sur la ville depuis les lits supperposés"
+                    class="hostResuCardItemFiguImage">
+                  <figcaption class="hostResuCardItemFiguCaption">
+                    <h3 class="hostResuCardItemFiguCaptLabel">Auberge de la Cannebière</h3>
+                  </figcaption>
+                </figure>
+                <p class="hostResuCardItemDescription">Nuit à partir de <span
+                    class="hostResultsCardItemDescPrice">25€</span></p>
+                <p class="hostResuCardItemRating">
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                  <i class="fas fa-star hostResuCardItemRatiIcon" data-active="false"></i>
+                </p>
+              </a>
+            </article>
+            <a class="hostMainViewmore" href="#">Afficher plus</a>
+
+
+          </section>
+        </section>
+        
+
+        <aside class="hostPopulars">
+          <header class="hostPopuHeader">
+            <h2 class="hostPopuHeadTitle">Les plus populaires</h2>
+            <i class="fas fa-chart-line hostPopuHeadIcon"></i>
+          </header>
+
+
+          <P>sdss</P>
+          <!-- Liste des hébergements les plus populaires -->
+        </aside>
+
+       
+      </div>
+      <section>
+        <!-- Activité dans la ville -->
+      </section>
+    </main>
+
+    <footer>
+      <!-- A propos -->
+
+      <!-- Nos hebergements -->
+
+      <!-- Assistance -->
+    </footer>
 
 
 </body>
+
 </html>

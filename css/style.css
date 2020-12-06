@@ -1,11 +1,11 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 ul {
-  list-style:none;
+  list-style: none;
   padding: 0;
 }
 
@@ -14,9 +14,8 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: unset;
+  color: none;
 }
-
 h1 {
   font-size: 2.2ch;
 }
@@ -24,29 +23,31 @@ h2 {
   font-size: 1.8ch;
 }
 h3 {
-  font-size: 1ch;
+  font-size: 1.4ch;
 }
 
-h1, h2, h3, p{
+h1,
+h2,
+h3,
+p {
   font-weight: 700;
 }
-p{
+p {
   font-weight: 400;
 }
-.header, .main {
+.header,
+.main {
   max-width: 1340px;
-  margin:auto;
+  margin: auto;
 }
 .header {
-  
   display: flex;
   justify-content: space-between;
-  flex-direction : row;
+  flex-direction: row;
   align-items: flex-start;
   vertical-align: auto;
-
 }
-.logo{
+.logo {
   height: 1.8125rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -58,24 +59,27 @@ p{
   flex-wrap: wrap;
 }
 
-.headNaviMenu{    
-  display: flex; 
-  flex-direction : row;
+.headNaviMenu {
+  display: flex;
+  flex-direction: row;
 }
 
-.headNaviSignup, .headNaviMenuItem {
+.headNaviSignup,
+.headNaviMenuItem {
   border-top: 2px solid transparent;
   padding-top: 3rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-.headNaviMenuItem:hover, .headNaviSignup:hover, .headNaviMenuItem[data-active=true] {
+.headNaviMenuItem:hover,
+.headNaviSignup:hover,
+.headNaviMenuItem[data-active="true"] {
   border-top: 2px solid#0065FC;
-  color: #0065FC;
+  color: #0065fc;
 }
 .headNaviSignup {
-  color: #0065FC;
+  color: #0065fc;
   font-weight: 600;
 }
 .mainSearTitle {
@@ -89,19 +93,17 @@ p{
   overflow: auto;
 }
 .mainSearFormWrap {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 1rem 1.25rem;
   border-radius: 1rem 0 0 1rem;
   text-align: center;
 }
 
-
-
 .mainSearFormInput_city {
   border-right: none;
   border-left: none;
-  border-top: #F2F2F2 1px solid;
-  border-bottom: #F2F2F2 1px solid;
+  border-top: #f2f2f2 1px solid;
+  border-bottom: #f2f2f2 1px solid;
   padding: 0 1.5rem;
   box-sizing: border-box;
   width: 15rem;
@@ -110,14 +112,13 @@ p{
   font-family: "Raleway", "Sans serif";
 }
 
-
 .mainSearFormInput-city::placeholder {
   font-family: "Raleway", "Sans serif";
   font-size: 1rem;
   color: #00000069;
 }
 .mainSearFormSubmit {
-  background-color: #0065FC;
+  background-color: #0065fc;
   color: white;
   font-weight: bold;
   border: none;
@@ -127,7 +128,6 @@ p{
   font-size: 1rem;
   cursor: pointer;
 }
-
 
 .searFilters {
   display: flex;
@@ -156,12 +156,12 @@ p{
   margin-right: 0;
 }
 .searFiltItem:hover {
-  background-color: #0065FC;
+  background-color: #0065fc;
   color: white;
-  border-color: #DEEBFF;
+  border-color: #deebff;
 }
 .searFiltItemWrap {
-  background-color: #DEEBFF;
+  background-color: #deebff;
   border-radius: 100%;
   height: 3rem;
   width: 3rem;
@@ -172,8 +172,8 @@ p{
   justify-content: center;
   margin: -2px;
 }
-.searFiltItemWrapIcon{
-  color: #0065FC;
+.searFiltItemWrapIcon {
+  color: #0065fc;
 }
 .searFiltItemText {
   margin: 0 1rem;
@@ -182,42 +182,118 @@ p{
 .searResult {
   display: inline-flex;
   align-items: center;
-  
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .searResuWrap {
   height: 1.5rem;
   width: 1.5rem;
   display: flex;
-  border: solid 1px  #d9d9d9;
+  border: solid 1px #d9d9d9;
   border-radius: 100%;
   align-items: center;
   justify-content: center;
   margin-right: 1em;
 }
 .searResuWrapIcon {
-  color: #0065FC;
+  color: #0065fc;
 }
 
-.hosting{
-    display: grid;
-    column-count: 2rem;
-    grid-template-columns: 6fr 3fr;
+.hosting {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  column-count: 2rem;
+  grid-template-columns: 6fr 3fr;
 }
-.hostResults { 
-    background-color: #f2f2f2;
-    border-radius: 1em;
+.hostResults {
+  margin: 0;
+  background-color: #f2f2f2;
+  width: 55rem;
+  box-sizing: border-box; 
+  border-radius: 1rem;
+  padding: 2.9rem 2.5rem;
+}
+.hostResuHeadTitle {
+  margin-top: 0;
+  margin-bottom: 1.4375rem;
 }
 .hostResuCards {
-    display: grid;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  
+}
+.hostResuCardItem {
+  background-color: white;
+  padding: 0.375rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 100%;
+  width: 15.3rem;
+  margin-bottom: 1.875rem;
+  
+}
+.hostResuCardItemFigure {
+  margin: 0;
 }
 
-.hostResuCardItemRatiIcon[data-active=false] {
-    color: #d9d9d9;
+.hostResuCardItemFiguImage {
+  height: 7rem;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 1rem 1rem 0 0;
 }
-.hostResuCardItemRatiIcon[data-active=true] {
-    color: #0065FC;
+
+.hostResuCardItemFiguCaption{
+  margin: 0.25rem 0.75rem 0 0.75rem;
+}
+.hostResuCardItemDescription {
+  margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
+.hostResuCardItemDescPrice {
+  font-weight: bold;
+}
+.hostResuCardItemRating {
+  margin: 0 0.75rem 0.25rem 0.75rem;
+}
+
+.hostResuCardItemRatiIcon[data-active="false"] {
+  color: #d9d9d9;
+}
+.hostResuCardItemRatiIcon[data-active="true"] {
+  color: #0065fc;
+}
+
+.hostMainViewmore {
+  font-weight: bold;
+}
+.hostPopulars {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box; 
+  background-color: #f2f2f2;
+  width: 26.25rem;
+  border-radius: 1em;
+  padding: 2.9rem 2.5rem;
+}
+
+.hostPopuHeader {
+  border-top: 0;
+  border-bottom: 1.4375rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hostPopuHeadTitle, .hostPopuHeadIcon {
+  margin-top: 0;
+  display: block;
 }
