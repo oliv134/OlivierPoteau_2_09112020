@@ -23,7 +23,7 @@ h2 {
   font-size: 1.8ch;
 }
 h3 {
-  font-size: 1.4ch;
+  font-size: 1.6ch;
 }
 
 h1,
@@ -31,8 +31,11 @@ h2,
 h3,
 p {
   font-weight: 700;
+
+  margin: 0;
 }
 p {
+  font-size: 1.5ch;
   font-weight: 400;
 }
 .header,
@@ -45,7 +48,7 @@ p {
   justify-content: space-between;
   flex-direction: row;
   align-items: flex-start;
-  vertical-align: auto;
+
 }
 .logo {
   height: 1.8125rem;
@@ -204,16 +207,15 @@ p {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  column-count: 2rem;
-  grid-template-columns: 6fr 3fr;
+
 }
 .hostResults {
-  margin: 0;
-  background-color: #f2f2f2;
   width: 55rem;
+  background-color: #f2f2f2;
   box-sizing: border-box; 
   border-radius: 1rem;
   padding: 2.9rem 2.5rem;
+  margin: 0;
 }
 .hostResuHeadTitle {
   margin-top: 0;
@@ -237,8 +239,9 @@ p {
   height: 100%;
   width: 15.3rem;
   margin-bottom: 1.875rem;
-  
 }
+
+
 .hostResuCardItemFigure {
   margin: 0;
 }
@@ -253,16 +256,18 @@ p {
 }
 
 .hostResuCardItemFiguCaption{
-  margin: 0.25rem 0.75rem 0 0.75rem;
+  padding-left: 0.5rem;
+  padding-top: 0.25em;
 }
 .hostResuCardItemDescription {
-  margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+  margin-top: 0.75rem;
+  padding-left: 0.5rem;
 }
 .hostResuCardItemDescPrice {
   font-weight: bold;
 }
 .hostResuCardItemRating {
-  margin: 0 0.75rem 0.25rem 0.75rem;
+  padding-left: 0.5rem;
 }
 
 .hostResuCardItemRatiIcon[data-active="false"] {
@@ -272,7 +277,7 @@ p {
   color: #0065fc;
 }
 
-.hostMainViewmore {
+.hostResuViewmore {
   font-weight: bold;
 }
 .hostPopulars {
@@ -283,17 +288,70 @@ p {
   background-color: #f2f2f2;
   width: 26.25rem;
   border-radius: 1em;
-  padding: 2.9rem 2.5rem;
+  padding: 2.9rem 2.5rem 2rem 2.9rem;
 }
 
 .hostPopuHeader {
-  border-top: 0;
-  border-bottom: 1.4375rem;
+  Margin-top: 0;
+  Margin-bottom: 1.4375rem;
   display: flex;
   justify-content: space-between;
 }
 
+
 .hostPopuHeadTitle, .hostPopuHeadIcon {
-  margin-top: 0;
+  margin: 0;
   display: block;
+}
+
+.hostPopuCardItem {
+  background-color: white;
+  padding: 0.375rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 1.875rem;
+}
+.hostPopuCardItem:last-child{
+  margin-bottom: 0;
+}
+.hostPopuCardItemWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100%;
+  overflow: auto;
+}
+
+
+.hostPopuCardItemImage {
+  height: 8.375rem;
+  width: 7.9375rem;
+  object-fit: cover;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.hostPopuCardItemText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0.5em 1.3125em;
+  
+  
+}
+
+ .hostPopuCardItemTextDescPrice {
+    font-weight: bold;
+  }
+
+
+
+
+
+.hostPopuCardItemRating, .hostPopuCardItemTextDescription, .hostPopuCardItemTextPrice  {
+  margin: 0;
 }
