@@ -1,0 +1,62 @@
+@media screen and (max-width: 767px) {
+  .header,
+  .main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .header {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . signup" "navbar navbar navbar";
+  }
+  .header_logo {
+    order: 0;
+  }
+  .header_signup {
+    order: 1;
+  }
+  .header__nav {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    order: 2;
+  }
+  .header__nav > a {
+    border-top: none;
+    border-bottom: 3px solid #f2f2f2;
+    width: 50%;
+  }
+  .header__nav > a[data-active="true"] {
+    border-bottom-color: #0065fc;
+  }
+  .header__nav > a:hover {
+    border-bottom-color: #0065fc;
+  }
+  .search__form {
+    display: flex;
+    width: 100%;
+  }
+  .search__input {
+    flex: 1;
+  }
+  .search__submit > span {
+    display: none;
+  }
+  .search__icon {
+    display: block;
+  }
+  .search__submit > i {
+    display: block;
+  }
+  .search__filters > h2 {
+    width: 100%;
+  }
+  .search__items {
+    margin-right: 0.8rem;
+
+  }
+  .search__items > span {
+    font-size: 1.45ch;
+    font-weight: 600;
+  }
+
+
+}
