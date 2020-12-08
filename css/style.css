@@ -15,13 +15,13 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: none;
+  color: unset;
 }
 h1 {
   font-size: 2.2ch;
 }
 h2 {
-  font-size: 1.8ch;
+  font-size: 2.2ch;
 }
 h3 {
   font-size: 1.6ch;
@@ -248,13 +248,6 @@ p {
   grid-column: 1/-1;
 }
 
-.populars {
-  display: grid;
-  row-gap: 2rem;
- 
-  grid-template-rows: auto repeat(3, 1fr);
-  width: 26.3rem;
-}
 
 .card__hosting a{
   background-color: white;
@@ -264,7 +257,6 @@ p {
   transition-duration: 0.1s;
   cursor: pointer;
   box-sizing: border-box;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -276,13 +268,21 @@ p {
   height: 7rem;
   object-fit: cover;
   max-width: 100%;
-  width: 100%;
   max-height: 100%;
   border-radius: 1rem 1rem 0 0;
 }
 .card__price>span{
   font-weight: bold;
 }
+
+.populars {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 26.3rem;
+}
+
+
 .card__popular a{
   background-color: white;
   padding: 0.375rem;
@@ -293,12 +293,13 @@ p {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  margin-bottom: 2rem;
 }
 .card__popular .card__picture {
   height: 7rem;
   object-fit: cover;
-  max-width: 100%;
   width: 8rem;
+  max-width: 100%;
   max-height: 100%;
   border-radius: 1rem 0 0 1rem;
 }
@@ -338,7 +339,7 @@ p {
 }
 
 .populars__head {
-  margin: 0;
+  margin-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
 }
