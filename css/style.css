@@ -7,6 +7,7 @@ body {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 a {
@@ -44,65 +45,71 @@ p {
   margin: auto;
 }
 .header {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: flex-start;
-
+  display: grid;
+  align-items: center;
 }
-.logo {
+.header__logo {
+  grid-area: logo;
+
   height: 1.8125rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
-
-.headNavigation {
+.header__nav {
   display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
+  align-items: center;
+  grid-area: navbar;
 }
-
-.headNaviMenu {
-  display: flex;
-  flex-direction: row;
+.header__nav > a {
+  padding: 2rem;
+  font-weight: 500;
+  text-align: center;
+  transition-duration: 0.1s;
+  border-top: 2px transparent solid;
+  border-bottom: 3px transparent solid;
 }
-
-.headNaviSignup,
-.headNaviMenuItem {
-  border-top: 2px solid transparent;
-  padding-top: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.headNaviMenuItem:hover,
-.headNaviSignup:hover,
-.headNaviMenuItem[data-active="true"] {
-  border-top: 2px solid#0065FC;
+.header__nav > a[data-active="true"] {
   color: #0065fc;
 }
-.headNaviSignup {
+.header__nav > a:hover {
+  color: #0065fc;
+}
+.header__signup {
+  display: flex;
+  align-items: center;
+  grid-area: signup;
+  padding: 2rem;
   color: #0065fc;
   font-weight: 600;
 }
-.mainSearTitle {
+@media screen and (min-width: 1024px) {
+.header {
+  grid-template-columns: auto 1fr auto auto;
+  grid-template-areas: "logo . navbar signup";
+}
+.header__nav > a[data-active="true"] {
+  border-top: 2px solid #0065fc;
+}
+.header__nav >a:hover {
+  border-top: 2px solid #0065fc;
+}
+
+.search__head > h1 {
   margin-top: 0rem;
   margin-bottom: 0.5em;
 }
 
-.mainSearForm {
+.search__form {
   display: inline-flex;
   max-width: 100%;
   overflow: auto;
 }
-.mainSearFormWrap {
+.search__icon{
   background-color: #f2f2f2;
   padding: 1rem 1.25rem;
   border-radius: 1rem 0 0 1rem;
   text-align: center;
 }
 
-.mainSearFormInput_city {
+.search__input{
   border-right: none;
   border-left: none;
   border-top: #f2f2f2 1px solid;
@@ -115,12 +122,12 @@ p {
   font-family: "Raleway", "Sans serif";
 }
 
-.mainSearFormInput-city::placeholder {
+.search__input::placeholder {
   font-family: "Raleway", "Sans serif";
   font-size: 1rem;
   color: #00000069;
 }
-.mainSearFormSubmit {
+.search__submit {
   background-color: #0065fc;
   color: white;
   font-weight: bold;
@@ -132,18 +139,18 @@ p {
   cursor: pointer;
 }
 
-.searFilters {
+.search__filters {
   display: flex;
   margin-top: 2rem;
   flex-wrap: wrap;
 }
-.searFiltTitle {
+.search__filters > h2 {
   margin: 0 2rem 1rem 1rem;
   display: flex;
   align-items: center;
 }
 
-.searFiltItem {
+.search__items {
   display: flex;
   align-items: center;
   margin-right: 1.5rem;
@@ -155,15 +162,15 @@ p {
   cursor: pointer;
   transition-duration: 0.1s;
 }
-.searFiltItem:last-child {
+.search__itemslast-child {
   margin-right: 0;
 }
-.searFiltItem:hover {
+.search__items:hover {
   background-color: #0065fc;
   color: white;
   border-color: #deebff;
 }
-.searFiltItemWrap {
+.search__items > div{
   background-color: #deebff;
   border-radius: 100%;
   height: 3rem;
@@ -175,10 +182,10 @@ p {
   justify-content: center;
   margin: -2px;
 }
-.searFiltItemWrapIcon {
+.search__items > div > i{
   color: #0065fc;
 }
-.searFiltItemText {
+.search__items > span {
   margin: 0 1rem;
 }
 
@@ -207,12 +214,11 @@ p {
   display: flex;
   width: 100%;
   justify-content: space-between;
-
 }
 .hostResults {
   width: 55rem;
   background-color: #f2f2f2;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   border-radius: 1rem;
   padding: 2.9rem 2.5rem;
   margin: 0;
@@ -234,14 +240,14 @@ p {
   transition-duration: 0.1s;
   cursor: pointer;
   box-sizing: border-box;
-  height: 100%;
+
   width: 15.3rem;
   margin-bottom: 1.875rem;
 }
 
-
 .hostResuCardItemFigure {
   margin: 0;
+  height: 8.5rem;
 }
 
 .hostResuCardItemFiguImage {
@@ -253,7 +259,7 @@ p {
   border-radius: 1rem 1rem 0 0;
 }
 
-.hostResuCardItemFiguCaption{
+.hostResuCardItemFiguCaption {
   padding-left: 0.5rem;
   padding-top: 0.25em;
 }
@@ -282,7 +288,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   background-color: #f2f2f2;
   width: 26.25rem;
   border-radius: 1em;
@@ -290,14 +296,14 @@ p {
 }
 
 .hostPopuHeader {
-  Margin-top: 0;
-  Margin-bottom: 1.4375rem;
+  margin-top: 0;
+  margin-bottom: 1.4375rem;
   display: flex;
   justify-content: space-between;
 }
 
-
-.hostPopuHeadTitle, .hostPopuHeadIcon {
+.hostPopuHeadTitle,
+.hostPopuHeadIcon {
   margin: 0;
   display: block;
 }
@@ -313,7 +319,7 @@ p {
   width: 100%;
   margin-bottom: 1.875rem;
 }
-.hostPopuCardItem:last-child{
+.hostPopuCardItem:last-child {
   margin-bottom: 0;
 }
 .hostPopuCardItemWrap {
@@ -324,7 +330,6 @@ p {
   height: 100%;
   overflow: auto;
 }
-
 
 .hostPopuCardItemImage {
   height: 8.375rem;
@@ -338,31 +343,90 @@ p {
   flex-direction: column;
   justify-content: space-between;
   margin: 0.5em 1.3125em;
-  
-  
 }
 
- .hostPopuCardItemTextDescPrice {
-    font-weight: bold;
-  }
+.hostPopuCardItemTextDescPrice {
+  font-weight: bold;
+}
 
-
-
-
-
-.hostPopuCardItemRating, .hostPopuCardItemTextDescription, .hostPopuCardItemTextPrice  {
+.hostPopuCardItemRating,
+.hostPopuCardItemTextDescription,
+.hostPopuCardItemTextPrice {
   margin: 0;
 }
 
 .activity {
   width: 100%;
-  background-color: #f2f2f2;
-  box-sizing: border-box; 
-  border-radius: 1rem;
-  padding: 2.9rem 2.5rem;
+  box-sizing: border-box;
   margin: 0;
   margin-top: 4.0625rem;
 }
-.activityHeader {
-  
+.actiHeader {
+  margin-bottom: 1.5rem;
+}
+
+.actiCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.actiCardItem {
+  background-color: white;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  width: 19rem;
+}
+
+.actiCardItemFigure {
+  margin: 0;
+}
+
+.actiCardItemFiguImage {
+  height: 24rem;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.actiCardItemFiguImage66 {
+  height: 11.25rem;
+}
+.actiCardItemFiguImage33 {
+  height: 6.875rem;
+}
+.actiCardItemFiguCaption {
+  height: 2rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+.actiCardItemWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.footerContent {
+  max-width: 1340px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footerContentSection {
+  width: 33%;
 }

@@ -4,85 +4,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservia</title>
+  <link rel="icon" type="image/png" href="./pictures/logo/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="stylesheet" href="./css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/40f67a93c2.js" crossorigin="anonymous"></script>
-  <title>Réservia</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/styleSmartphone.css" />
+  <link rel="stylesheet" href="./css/styleTablet.css" />
 </head>
 
 <body>
   <header class="header">
-    <a href="./index.html">
-      <img class="logo" src="./pictures/logo/Reservia@3x.png" alt="Logo Réservia" />
+    <a href="index.html">
+      <img class="header__logo" src="./pictures/logo/Reservia@3x.png" alt="Logo Réservia" />
     </a>
-
-    <nav class="headNavigation">
-      <ul class="headNaviMenu">
-        <li>
-          <a class="headNaviMenuItem" href="#" data-active="true">Hébergements</a>
-        </li>
-        <li>
-          <a class="headNaviMenuItem" href="#" data-active="false">Activités</a>
-        </li>
-      </ul>
-      <a class="headNaviSignup" href="#">S'inscire</a>
+    <nav class="header__nav">
+      <a href="#" data-active="true">Hébergements</a>
+      <a href="#" data-active="false">Activités</a>
     </nav>
+    <a class="header__signup" href="#">S'inscire</a>
   </header>
 
   <main class="main">
-    <section class="mainSearch">
-      <!-- Recherche -->
-
-      <header>
-        <h1 class="mainSearTitle">
+    <section class="search">
+  
+      <header class="search__head">
+        <h1>
           Trouvez votre hébergement pour des vacances de rêve
         </h1>
         <p>En plein centre ville ou en pleine nature</p>
       </header>
 
-      <form class="mainSearForm" action="#">
-        <span class="mainSearFormWrap">
-          <i class="fas fa-map-marker-alt mainSearFormWrapIcon"></i>
+      <form class="search__form" action="#">
+        <span class="search__icon">
+          <i class="fas fa-map-marker-alt"></i>
         </span>
-        <input class="mainSearFormInput_city" type="search" placeholder="Marseille, France" name="city" />
-        <button class="mainSearFormSubmit">
-          <span class="mainSearFormSubmText">Rechercher</span>
+        <input class="search__input" type="search" placeholder="Marseille, France" name="city" />
+        <button class="search__submit">
+          <span>Rechercher</span>
         </button>
       </form>
 
-      <div class="searFilters">
-        <h2 class="searFiltTitle">Filtres</h2>
+      <div class="search__filters">
+        <h2>Filtres</h2>
 
-        <div class="searFiltItem">
-          <div class="searFiltItemWrap">
-            <i class="fas fa-money-bill-wave searFiltItemWrapIcon"></i>
+        <div class="search__items">
+          <div>
+            <i class="fas fa-money-bill-wave"></i>
           </div>
-          <span class="searFiltItemText">Économique</span>
+          <span>Économique</span>
         </div>
 
-        <div class="searFiltItem">
-          <div class="searFiltItemWrap">
-            <i class="fas fa-child searFiltItemWrapIcon"></i>
+        <div class="search__items">
+          <div>
+            <i class="fas fa-child"></i>
           </div>
-          <span class="searFiltItemText">Familial</span>
+          <span>Familial</span>
         </div>
 
-        <div class="searFiltItem">
-          <div class="searFiltItemWrap">
-            <i class="fas fa-heart searFiltItemWrapIcon"></i>
+        <div class="search__items">
+          <div>
+            <i class="fas fa-heart"></i>
           </div>
-          <span class="searFiltItemText">Romantique</span>
+          <span>Romantique</span>
         </div>
 
-        <div class="searFiltItem">
-          <div class="searFiltItemWrap">
-            <i class="fas fa-dog searFiltItemWrapIcon"></i>
+        <div class="search__items">
+          <div>
+            <i class="fas fa-dog"></i>
           </div>
-          <span class="searFiltItemText">Animaux autorisés</span>
+          <span>Animaux autorisés</span>
         </div>
-      </div>
+
 
       <div class="searResult">
         <div class="searResuWrap">
@@ -92,14 +89,35 @@
       </div>
     </section>
 
-    <span class="choice"> </span>
-
     <div class="hosting">
       <section class="hostResults">
         <!-- Listes des logements -->
         <header class="hostResuHeader">
           <h2 class="hostResuHeadTitle">Hébergements à Marseille</h2>
         </header>
+
+        <article class="card-wrap">
+          <!-- Vignette du logement-->
+          <a class="card" href="#">
+
+            <img src="./pictures/hosts/pop_1.jpg" alt="Chambre d'un joli vert" class="card-picture" />
+
+            <div class="card__description">
+              <h3>Hôtel Le soleil du matin</h3>
+              <p class="card__price">
+                Nuit à partir de
+                <span>128€</span>
+              </p>
+              <p class="card__rating">
+                <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+                <i class="fas fa-star hostResuCardItemRatiIcon" data-active="true"></i>
+              </p>
+            </div>
+          </a>
+        </article>
 
         <div class="hostResuCards">
           <article class="hostResuCardItem">
@@ -130,8 +148,7 @@
             <!-- Vignette du logement-->
             <a href="#">
               <figure class="hostResuCardItemFigure">
-                <img src="./pictures/hosts/host_2.jpg" alt="Chambre moderne"
-                  class="hostResuCardItemFiguImage" />
+                <img src="./pictures/hosts/host_2.jpg" alt="Chambre moderne" class="hostResuCardItemFiguImage" />
                 <figcaption class="hostResuCardItemFiguCaption">
                   <h3>Hôtel du port</h3>
                 </figcaption>
@@ -245,11 +262,11 @@
               </p>
             </a>
           </article>
-          
+
         </div>
         <a class="hostResuViewmore" href="#">Afficher plus</a>
       </section>
-      
+
       <aside class="hostPopulars">
         <header class="hostPopuHeader">
           <h2 class="hostPopuHeadTitle">Les plus populaires</h2>
@@ -259,10 +276,9 @@
           <article class="hostPopuCardItem">
             <!-- Vignette du logement-->
             <a class="hostPopuCardItemWrap" href="#">
-             
-                <img src="./pictures/hosts/pop_1.jpg" alt="Chambre d'un joli vert"
-                  class="hostPopuCardItemImage" />
-              
+
+              <img src="./pictures/hosts/pop_1.jpg" alt="Chambre d'un joli vert" class="hostPopuCardItemImage" />
+
               <div class="hostPopuCardItemText">
                 <h3 class="hostPopuCardItemTextPrice">Hôtel Le soleil du matin</h3>
                 <p class="hostPopuCardItemTextDescription">
@@ -283,10 +299,10 @@
           <article class="hostPopuCardItem">
             <!-- Vignette du logement-->
             <a class="hostPopuCardItemWrap" href="#">
-              
-                <img src="./pictures/hosts/pop_2.jpg" alt="Chambre agréable, moderne et lumineuse"
-                  class="hostPopuCardItemImage" />
-              
+
+              <img src="./pictures/hosts/pop_2.jpg" alt="Chambre agréable, moderne et lumineuse"
+                class="hostPopuCardItemImage" />
+
               <div class="hostPopuCardItemText">
                 <h3 class="hostPopuCardItemTextPrice">Au coeur de l'eau Chambres d'hôtes</h3>
                 <p class="hostPopuCardItemTextDescription">
@@ -306,10 +322,10 @@
           <article class="hostPopuCardItem">
             <!-- Vignette du logement-->
             <a class="hostPopuCardItemWrap" href="#">
- 
-                <img src="./pictures/hosts/pop_3.jpg" alt="Une chambre sobre et lumineuse"
-                  class="hostPopuCardItemImage" />
-     
+
+              <img src="./pictures/hosts/pop_3.jpg" alt="Une chambre sobre et lumineuse"
+                class="hostPopuCardItemImage" />
+
 
               <div class="hostPopuCardItemText">
                 <h3 class="hostPopuCardItemTextPrice">Hôtel Tout bleu et Blanc</h3>
@@ -333,21 +349,117 @@
     </div>
     <section class="activity">
       <!-- Activité dans la ville -->
-      <h2 class="activityHeader">Activités dans la ville</h2>
-      <section>
-        <div class="activityCards">
-          
+      <h2 class="actiHeader">Activités à Marseille</h2>
+      <section class="actiCards">
+
+        <article class="actiCardItem">
+          <!-- Vignette du logement-->
+          <a href="#">
+            <figure class="actiCardItemFigure">
+              <img src="./pictures/activities/activity_1.jpg" alt="Chambre moderne" class="actiCardItemFiguImage" />
+              <figcaption class="actiCardItemFiguCaption">
+                <h3>Vieux Port</h3>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+        <div class="actiCardItemWrap">
+          <article class="actiCardItem">
+            <a href="#">
+              <figure class="actiCardItemFigure actiCardItemFigure66">
+                <img src="./pictures/activities/activity_2.jpg" alt="Chambre moderne"
+                  class="actiCardItemFiguImage actiCardItemFiguImage66" />
+                <figcaption class="actiCardItemFiguCaption">
+                  <h3>Fort de Pomègues</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+
+          <article class="actiCardItem">
+            <!-- Vignette du logement-->
+            <a href="#">
+              <figure class="actiCardItemFigure">
+                <img src="./pictures/activities/activity_3.jpg" alt="Chambre moderne"
+                  class="actiCardItemFiguImage actiCardItemFiguImage33" />
+                <figcaption class="actiCardItemFiguCaption">
+                  <h3>Îles du Frioul</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+        </div>
+
+        <!-- Vignette du logement-->
+
+
+        <article class="actiCardItem">
+          <!-- Vignette du logement-->
+          <a href="#">
+            <figure class="actiCardItemFigure">
+              <img src="./pictures/activities/activity_4.jpg" alt="Chambre moderne" class="actiCardItemFiguImage" />
+              <figcaption class="actiCardItemFiguCaption">
+                <h3>Parc National des Calanques</h3>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+        <div class="actiCardItemWrap">
+          <article class="actiCardItem">
+            <a href="#">
+              <figure class="actiCardItemFigure">
+                <img src="./pictures/activities/activity_5.jpg" alt="Chambre moderne"
+                  class="actiCardItemFiguImage actiCardItemFiguImage33" />
+                <figcaption class="actiCardItemFiguCaption">
+                  <h3>Notre Dame-de-la-Garde</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+
+          <article class="actiCardItem">
+            <!-- Vignette du logement-->
+            <a href="#">
+              <figure class="actiCardItemFigure">
+                <img src="./pictures/activities/activity_6.jpg" alt="Chambre moderne"
+                  class="actiCardItemFiguImage actiCardItemFiguImage66" />
+                <figcaption class="actiCardItemFiguCaption">
+                  <h3>Parc Longchamps</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
         </div>
       </section>
     </section>
   </main>
 
-  <footer>
-    <!-- A propos -->
-
-    <!-- Nos hebergements -->
-
-    <!-- Assistance -->
+  <footer class="footer">
+    <div class="footerContent">
+      <section class="footerContentSection">
+        <h3>À propos</h3>
+        <ul>
+          <li>Fonctionnement du site</li>
+          <li>Conditions générales de vente</li>
+          <li>Données et confidentialité</li>
+      </section>
+      <section class="footerContentSection">
+        </ul>
+        <h3>Nos hébergements</h3>
+        <ul>
+          <li>Charte qualité</li>
+          <li>Soumetttre votre hôtel</li>
+        </ul>
+      </section>
+      <section class="footerContentSection">
+        </ul>
+        <h3>Assistance</h3>
+        <ul>
+          <li>Centre d'aide</li>
+          <li>Nous contacter</li>
+        </ul>
+      </section>
+    </div>
   </footer>
 </body>
 
