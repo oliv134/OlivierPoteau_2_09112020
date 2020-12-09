@@ -1,0 +1,95 @@
+@media screen and (min-width: 768px) and (max-width: 1320px) {
+  .header,
+  .main {
+  }
+  .header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .header__nav {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .search__form {
+    display: flex;
+    width: 100%;
+  }
+  .search__input {
+    flex: 1;
+  }
+
+  .search__submit > i {
+    display: none;
+  }
+  .search__filters > h2 {
+    width: 100%;
+  }
+  .search__items {
+    margin-right: 0.8rem;
+  }
+  .search__items > span {
+    font-size: 1.45ch;
+    font-weight: 600;
+  }
+  .result {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "popular" "spacer" "hosting";
+  }
+  .result .spacer {
+    height: 1rem;
+    grid-area: spacer;
+  }
+  .search,
+  .hosting,
+  .popular,
+  .activity,
+  .footer {
+    width: 100%;
+    border-radius: 0;
+    padding: 1rem;
+  }
+  .hosting {
+    background-color: transparent;
+  }
+ 
+  .popular__card {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .popular__card > .card{
+    max-width: 100%;
+  }
+  .popular__card > .card a {
+    flex-direction: column;
+  }
+  .popular__card .card__picture {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .popular__card .card__description {
+    height: 5rem;
+  }
+  .activity {
+    margin-top: 1rem;
+  }
+  .activity__card {
+    display: grid;
+    grid-template-columns: auto 2.5rem auto;
+    grid-template-rows: 12.25rem 2.5rem 12.25rem 2.5rem 12.25rem;
+    grid-template-areas:
+      "A1 . A2"
+      ". . ."
+      "A3 . A4"
+      ". . ."
+      "A5 . A6";
+    
+  }
+  .activity__card .card__picture {
+    max-width: 100%;
+  }
+}
