@@ -1,4 +1,4 @@
-![GitHub Logo](https://github.com/oliv134/OC_P2/blob/main/pictures/logo/Reservia%403x.png)
+![GitHub Logo](/pictures/logo/Reservia%403x.png)
 
 Projet n° 2 du parcours "Développeur web" chez OpenClassroom.
 L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia" (voir l'image ci-dessous).
