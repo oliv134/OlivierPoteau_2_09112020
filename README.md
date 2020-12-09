@@ -4,7 +4,7 @@ Projet n° 2 du parcours "Développeur web" chez OpenClassroom.
 L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia" (voir l'image ci-dessous).
 
 ## Éléments fournis:
-- Maquette: desktop et mobile.
+- Maquette: [desktop](./docs/desktop.png) et [mobile](./docs/iphone8.png)
 - Images: Exemple de locations, activités et logo
 - Icones: [Font Awesome](https://fontawesome.com/)
 - Couleurs : bleu #0065FC - bleu clair #DEEBFF - gris #F2F2F2
@@ -30,3 +30,5 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
 - Le logo est recoupé selon son contenu.
 - La largeur du corps est de 1340px
 - unité utilisée le rem pour la taille des objets et em pour la police
+
+Lien vers le site web: https://oliv134.github.io/OlivierPoteau_2_09112020/
