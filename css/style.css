@@ -343,65 +343,74 @@ p {
 }
 
 
+.card {
+  height: 100%;
+  background-color: goldenrod;
+}
+
+h3 {
+  margin: 0;
+}
+
+.activity__card a {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+}
+
+.activity__card .card__picture {
+  overflow: hidden;
+  flex: 1;
+  object-fit: cover;
+  background-color: gold;
+}
+
+.activity__card .card__description {
+  background-color: aqua;
+  height: 4 rem;
+
+}
+
 .activity__card {
   display: grid;
-  grid-template-columns: 18.75rem auto 18.75rem auto 18.75rem auto 18.75rem; 
+  grid-template-columns: 18.75rem auto 18.75rem auto 18.75rem auto 18.75rem;
   grid-template-rows: 12.25rem 2.5rem 2.75rem 10.25rem;
   grid-template-areas:
     "A1 . A2 . A4 . A5"
     "A1 . A2 . A4 . ."
     "A1 . .  . A4 . A6"
     "A1 . A3 . A4 . A6";
-    
-}
-.activity__card > .card {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 0 16px #0000002e;
-  cursor: pointer;
-  transition-duration: 0.1s;
-}
-.activity__card > .card a {
-  height: 100%;
-}
-.activity__card .card__picture {
-  flex: 1;
-  object-fit: cover;
-  max-height: 100%;
-  max-width: 100%;
-  
 }
 
-.activity__card > .card:nth-child(1) {
+.activity__card>.card:nth-child(1) {
   background-color: lawngreen;
   grid-area: A1;
 }
 
-.activity__card > .card:nth-child(2) {
+.activity__card>.card:nth-child(2) {
   grid-area: A2;
 }
 
-.activity__card > .card:nth-child(3) {
+.activity__card>.card:nth-child(3) {
   grid-area: A3;
 }
 
-.activity__card > .card:nth-child(4) {
+.activity__card>.card:nth-child(4) {
   background-color: lawngreen;
   grid-area: A4;
 }
 
-.activity__card > .card:nth-child(5) {
+.activity__card>.card:nth-child(5) {
   grid-area: A5;
 }
 
-.activity__card > .card:nth-child(6) {
+.activity__card>.card:nth-child(6) {
   grid-area: A6;
 }
-
-
 .footer {
   background-color: #f2f2f2;
   width: 100%;
