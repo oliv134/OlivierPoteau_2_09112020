@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: unset;
+  display: none;
 }
 h1 {
   font-size: 2.2ch;
@@ -99,6 +99,7 @@ p {
   padding: 1rem 1.25rem;
   border-radius: 1rem 0 0 1rem;
   text-align: center;
+  display: block;
 }
 
 .search__input {

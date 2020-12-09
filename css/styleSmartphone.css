@@ -38,9 +38,7 @@
   .search__submit > span {
     display: none;
   }
-  .search__icon {
-    display: block;
-  }
+
   .search__submit > i {
     display: block;
   }
