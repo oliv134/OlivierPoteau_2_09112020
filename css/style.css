@@ -51,7 +51,6 @@ p {
 }
 .header__logo {
   grid-area: logo;
-
   height: 1.8125rem;
 }
 .header__nav {
@@ -69,9 +68,12 @@ p {
 }
 .header__nav > a[data-active="true"] {
   color: #0065fc;
+  border-top: 2px solid #0065fc;
 }
+
 .header__nav > a:hover {
   color: #0065fc;
+  border-top: 2px solid #0065fc;
 }
 .header__signup {
   display: flex;
@@ -81,21 +83,13 @@ p {
   color: #0065fc;
   font-weight: 600;
 }
-@media screen and (min-width: 1024px) {
-  .header {
+.search {
+  box-sizing: border-box;
 
-  }
-  .header__nav > a[data-active="true"] {
-    border-top: 2px solid #0065fc;
-  }
-  .header__nav > a:hover {
-    border-top: 2px solid #0065fc;
-  }
-
-  .search__head > h1 {
-    margin-top: 0rem;
-    margin-bottom: 0.5em;
-  }
+}
+.search__head > h1 {
+  margin-top: 0rem;
+  margin-bottom: 0.5em;
 }
 .search__form {
   margin-top: 1.25rem;
@@ -239,6 +233,7 @@ p {
   padding: 2.5rem;
 }
 .hosting {
+  grid-area: hosting;
   width: 55rem;
 }
 .hosting__card {
@@ -263,6 +258,7 @@ p {
   max-width: 15.375rem;
   cursor: pointer;
   transition-duration: 0.1s;
+  width: 100%;
 }
 
 .card:hover {
@@ -280,6 +276,7 @@ p {
 }
 
 .popular {
+  grid-area: popular;
   width: 26rem;
 }
 
@@ -354,6 +351,7 @@ p {
   box-shadow: 0 0 16px #0000002e;
 }
 .activity {
+  box-sizing: border-box;
   margin-top: 4.0625rem;
 }
 
@@ -368,7 +366,6 @@ p {
 
 .activity__card .card__picture {
   border-radius: 1rem 1rem 0 0;
-
   overflow: hidden;
   flex: 1;
   object-fit: cover;
@@ -441,5 +438,3 @@ p {
 .footerContent li {
   margin-top: 0.7rem;
 }
-
-

@@ -1,23 +1,18 @@
 @media screen and (max-width: 767px) {
   .header,
   .main {
-    margin-left: 1rem;
-    margin-right: 1rem;
   }
   .header {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "logo . signup" "navbar navbar navbar";
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
-  .header_logo {
-    order: 0;
-  }
-  .header_signup {
-    order: 1;
-  }
+
   .header__nav {
     margin-left: -1rem;
     margin-right: -1rem;
-    order: 2;
+
   }
   .header__nav > a {
     border-top: none;
@@ -25,11 +20,14 @@
     width: 50%;
   }
   .header__nav > a[data-active="true"] {
+    border-top: 0;
     border-bottom-color: #0065fc;
   }
   .header__nav > a:hover {
+    border-top: 0;
     border-bottom-color: #0065fc;
   }
+ 
   .search__form {
     display: flex;
     width: 100%;
@@ -51,12 +49,63 @@
   }
   .search__items {
     margin-right: 0.8rem;
-
   }
   .search__items > span {
     font-size: 1.45ch;
     font-weight: 600;
   }
-
-
+  .result {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "popular" "spacer" "hosting";
+  }
+  .result .spacer {
+    height: 1rem;
+    grid-area: spacer;
+  }
+  .search,
+  .hosting,
+  .popular,
+  .activity,
+  .footer {
+    width: 100%;
+    border-radius: 0;
+    padding: 1rem;
+  }
+  .hosting {
+    background-color: transparent;
+  }
+  .hosting__card > .card,
+  .popular__card > .card {
+    max-width: 100%;
+  }
+  .activity {
+    margin-top: 1rem;
+   
+  }
+  .activity__card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 12.25rem 2.5rem) 12.25rem;
+    grid-template-areas: "A1" "." "A2" "." "A3" "." "A4" "." "A5" "." "A6";
+    max-width: 100%;
+  }
+  .activity__card .card__picture {
+    width: 100%;
+  }
+  .footer {
+    height: 100%;
+  }
+  .footerContent {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+  }
+  .footerContentSection {
+    width: 100%;
+  }
 }
