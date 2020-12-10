@@ -29,10 +29,11 @@
   }
  
   .search__form {
-    display: flex;
     width: 100%;
+
   }
   .search__input {
+    width: 1rem;
     flex: 1;
   }
   .search__submit > span {
@@ -55,8 +56,10 @@
   .result {
     margin-top: 2rem;
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: "popular" "spacer" "hosting";
+    grid-template-columns: 1;
+    grid-template-rows: auto auto;
+    grid-template-areas: "popular" "hosting";
+    gap: 0;
   }
   .result .spacer {
     height: 1rem;
@@ -74,8 +77,8 @@
   .hosting {
     background-color: transparent;
   }
-  .hosting__card > .card,
-  .popular__card > .card {
+  .hosting__card > .card a,
+  .popular__card > .card a {
     max-width: 100%;
   }
   .activity {
