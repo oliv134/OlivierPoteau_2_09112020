@@ -38,12 +38,12 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
 
 - Images, logo et favicon:  
   Les Images contenues dans le dossier 4x sont de taille suffisante pour ce projet. Elles ont été renommées et contenues dans leur dossier respectif pictures/hosts, pictures/activities.  
-  le logo choisie est sa version png. Il a été croppé sous gimp pour retirer ses marges.
+  Le logo choisie est sa version png. Il a été croppé sous gimp pour retirer ses marges.
 
 - Breakpoints:
-..- Desktop: `(min-width: 1320 px)`.
-..- Tablet: `(min-width: 768px) and (max-width: 1319 px).`
-..- Smartphone: `(max-width: 1319 px)`.
+ - Desktop: `(min-width: 1320 px)`.
+ - Tablet: `(min-width: 768px) and (max-width: 1319 px).`
+ - Smartphone: `(max-width: 1319 px)`.
 
 
 
