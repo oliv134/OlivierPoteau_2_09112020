@@ -1,11 +1,21 @@
 @media screen and (max-width: 767px) {
+  /* ------------------------------------------------ common declarations*/
+  .search,
+  .hosting,
+  .popular,
+  .activity,
+  .footer {
+    width: 100%;
+    border-radius: 0;
+    padding: 1.25rem;
+  }
+  /* ------------------------------------------------ Header*/
   .header {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "logo . signup" "navbar navbar navbar";
     margin-left: 1rem;
     margin-right: 1rem;
   }
-
   .header__nav {
     margin-left: -1rem;
     margin-right: -1rem;
@@ -22,7 +32,7 @@
     border-top: 0;
     border-bottom-color: #0065fc;
   }
-
+  /* ------------------------------------------------ Search */
   .search__form {
     width: 100%;
   }
@@ -33,7 +43,6 @@
   .search__submit > span {
     display: none;
   }
-
   .search__submit > i {
     display: block;
   }
@@ -47,6 +56,7 @@
     font-size: 1.45ch;
     font-weight: 600;
   }
+  /* ------------------------------------------------ Result */
   .result {
     margin-top: 2rem;
     display: grid;
@@ -55,32 +65,22 @@
     grid-template-areas: "popular" "hosting";
     gap: 0;
   }
-  .search,
-  .hosting,
-  .popular,
-  .activity,
-  .footer {
-    width: 100%;
-    border-radius: 0;
-    padding: 1.25rem;
-  }
+  /* ------------------------------------------------ Hosting / Popular */
   .hosting {
     background-color: transparent;
   }
-  .hosting__card .card{
+  .hosting__card .card {
     width: 100%;
     flex: 1 0 auto;
   }
   .hosting__card .card__picture {
     height: 7.125rem;
-    
   }
   .hosting__card > .card a,
   .popular__card > .card a {
-    
     max-width: 100%;
   }
-
+  /* ------------------------------------------------ Activity */
   .activity {
     margin-top: 1rem;
   }
@@ -94,6 +94,7 @@
   .activity__card .card__picture {
     width: 100%;
   }
+  /* ------------------------------------------------ Footer */
   .footerContent {
     flex-direction: column;
   }

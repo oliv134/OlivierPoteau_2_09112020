@@ -1,4 +1,15 @@
 @media screen and (min-width: 768px) and (max-width: 1320px) {
+  /* ------------------------------------------------ common declarations*/
+  .search,
+  .hosting,
+  .popular,
+  .activity,
+  .footer {
+    width: 100%;
+    border-radius: 0;
+    padding: 1.25rem;
+  }
+  /* ------------------------------------------------ Header*/
   .header {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -8,7 +19,7 @@
     margin-left: -1rem;
     margin-right: -1rem;
   }
-
+  /* ------------------------------------------------ Search */
   .search__form {
     display: flex;
     width: 100%;
@@ -30,6 +41,7 @@
     font-size: 1.45ch;
     font-weight: 600;
   }
+  /* ------------------------------------------------ Result */
   .result {
     margin-top: 2rem;
     display: grid;
@@ -37,15 +49,7 @@
     grid-template-rows: auto auto;
     grid-template-areas: "popular" "hosting";
   }
-  .search,
-  .hosting,
-  .popular,
-  .activity,
-  .footer {
-    width: 100%;
-    border-radius: 0;
-    padding: 1.25rem;
-  }
+  /* ------------------------------------------------ Hosting / Popular */
   .hosting {
     background-color: transparent;
   }
@@ -56,9 +60,9 @@
   .hosting__card > .card a {
     max-width: unset;
   }
-   .hosting__more {
-     text-align: right;
-   }
+  .hosting__more {
+    text-align: right;
+  }
   .popular__card {
     display: flex;
     flex-direction: row;
@@ -66,7 +70,6 @@
   }
   .hosting__card .card__picture {
     height: 14rem;
-    
   }
   .popular__card > .card a {
     flex-direction: column;
@@ -78,6 +81,7 @@
   .popular__card .card__description {
     height: 5rem;
   }
+  /* ------------------------------------------------ Activity */
   .activity {
     margin-top: 1rem;
   }
@@ -89,7 +93,7 @@
       "A1 A2"
       "A3 A4"
       "A5 A6";
-      gap: 2rem;
+    gap: 2rem;
   }
   .activity__card > .card {
     flex: 1 0 33.3333%;
