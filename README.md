@@ -35,8 +35,10 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
 - L'integration est faite sur l'éditeur [Visual Studio Code](https://code.visualstudio.com/).  
   Une version open source est disponible ici: [vscodium](https://vscodium.com/).
 - Le code html et css est validé W3C:  
-  [validator.w3.org](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Foliv134.github.io%2FOlivierPoteau_2_09112020%2F).
-
+     - index.html [validator.w3.org](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Foliv134.github.io%2FOlivierPoteau_2_09112020%2F)  
+     - style.css [validator.w3.org](http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foliv134.github.io%2FOlivierPoteau_2_09112020%2Fcss%2Fstyle.css)  
+     - styleSmartphone.css [validator.w3.org](http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foliv134.github.io%2FOlivierPoteau_2_09112020%2Fcss%2FstyleSmartphone.css)
+     - styleTablet.css [validator.w3.org](http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foliv134.github.io%2FOlivierPoteau_2_09112020%2Fcss%2FstyleTablet.css)
 - La font Google Raleway est intégrable via une déclaration dans le head du html.
 
 - Images, logo et favicon:  
