@@ -41,9 +41,9 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
   Le logo choisie est sa version png. Il a été croppé sous gimp pour retirer ses marges.
 
 - Breakpoints:
- - Desktop: `(min-width: 1320 px)`.
- - Tablet: `(min-width: 768px) and (max-width: 1319 px).`
- - Smartphone: `(max-width: 1319 px)`.
+     - Desktop: `(min-width: 1320 px)`.
+     - Tablet: `(min-width: 768px) and (max-width: 1319 px).`
+     - Smartphone: `(max-width: 1319 px)`.
 
 
 
