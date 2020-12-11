@@ -26,15 +26,16 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
 - Intégration tablette à créer: adaptations libres -> breakpoints appropriés.
 - Images:  taille adéquate afin qu'elle soit le plus jolie possible en impactant le moins possible le temps de chargement de la page.
 
-
-
-
-
 ## Notes sur la réalisation du projet
-- L'integration est faite sur l'éditeur [Visual Studio Code](https://code.visualstudio.com/).
-  Une version open source sans la télémétrier microsoft est disponible ici: [vscodium](https://vscodium.com/).
+- Le projet est consultable ici https://oliv134.github.io/OlivierPoteau_2_09112020/.  
+  GitHub Pages permet de publier un site web à partir d’un projet GitHub. Il doit être paramétré dans le dépot github concerné.  
+  Afin que ce site web soit à jour lors d'un `git push`, il faur configurer un workflow.
+
+- L'integration est faite sur l'éditeur [Visual Studio Code](https://code.visualstudio.com/).  
+  Une version open source est disponible ici: [vscodium](https://vscodium.com/).
+
 - Choix des images
-  Les Images contenues dans le dossier 4x sont de taille suffisante pour ce projet. Elles ont été renommées et place dans leur dossiers respectifs (hosts, activities).
+  Les Images contenues dans le dossier 4x sont de taille suffisante pour ce projet. Elles ont été renommées et contenues dans leur dossier respectif pictures/hosts, pictures/activities
 - Le logo est recoupé selon son contenu.
 - La largeur du corps est de 1340px
 - unité utilisée le rem pour la taille des objets et em pour la police
