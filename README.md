@@ -1,4 +1,4 @@
-![GitHub Logo](/pictures/logo/Reservia%403x.png)
+![GitHub Logo](/pictures/logo/Reservia%403x.png)  
 **Olivier Poteau** - Soutenance du 11 décembre 2020  
 
 Projet n° 2 du parcours "Développeur web" chez OpenClassroom.
