@@ -34,6 +34,7 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
 
 - L'integration est faite sur l'éditeur [Visual Studio Code](https://code.visualstudio.com/).  
   Une version open source est disponible ici: [vscodium](https://vscodium.com/).
+- Le code html et css est validé W3C: (https://validator.w3.org/nu/?doc=https%3A%2F%2Foliv134.github.io%2FOlivierPoteau_2_09112020%2F).
 
 - La font Google Raleway est intégrable via une déclaration dans le head du html.
 
@@ -45,7 +46,3 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
      - Desktop: `(min-width: 1320px)`
      - Tablet: `(min-width: 768px) and (max-width: 1319px)`
      - Smartphone: `(max-width: 767px)`
-
-
-
-
