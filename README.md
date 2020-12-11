@@ -28,7 +28,8 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
 - Images:  taille adéquate afin qu'elle soit le plus jolie possible en impactant le moins possible le temps de chargement de la page.
 
 ## Notes sur la réalisation du projet
-- Le projet est consultable ici https://oliv134.github.io/OlivierPoteau_2_09112020/.  
+- La projet est hébergé sur github ici: https://github.com/oliv134/OlivierPoteau_2_09112020
+- Le projet est consultable ici https://oliv134.github.io/OlivierPoteau_2_09112020/   
   GitHub Pages permet de publier un site web à partir d’un projet GitHub. Il doit être paramétré dans le dépot github concerné.  
   Afin que ce site web soit à jour lors d'un `git push`, il faur configurer un workflow.
 
