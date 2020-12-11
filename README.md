@@ -1,5 +1,5 @@
 ![GitHub Logo](/pictures/logo/Reservia%403x.png)
-<p style="text-align:justify;">Olivier Poteau - Soutenance du 11 décembre 2020</p>  
+<p style="text-align:right;">**Olivier Poteau** - Soutenance du 11 décembre 2020</p>  
 
 Projet n° 2 du parcours "Développeur web" chez OpenClassroom.
 L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia" (voir l'image ci-dessous).
