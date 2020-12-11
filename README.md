@@ -1,4 +1,5 @@
 ![GitHub Logo](/pictures/logo/Reservia%403x.png)
+<p style="text-align:justify;">Olivier Poteau - Soutenance du 11 décembre 2020</p>  
 
 Projet n° 2 du parcours "Développeur web" chez OpenClassroom.
 L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia" (voir l'image ci-dessous).
@@ -41,9 +42,9 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
   Le logo choisie est sa version png. Il a été croppé sous gimp pour retirer ses marges.
 
 - Breakpoints:
-     - Desktop: `(min-width: 1320px)`.
-     - Tablet: `(min-width: 768px) and (max-width: 1319px).`
-     - Smartphone: `(max-width: 767px)`.
+     - Desktop: `(min-width: 1320px)`
+     - Tablet: `(min-width: 768px) and (max-width: 1319px)`
+     - Smartphone: `(max-width: 767px)`
 
 
 
