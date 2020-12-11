@@ -34,10 +34,17 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
 - L'integration est faite sur l'éditeur [Visual Studio Code](https://code.visualstudio.com/).  
   Une version open source est disponible ici: [vscodium](https://vscodium.com/).
 
-- Choix des images
-  Les Images contenues dans le dossier 4x sont de taille suffisante pour ce projet. Elles ont été renommées et contenues dans leur dossier respectif pictures/hosts, pictures/activities
-- Le logo est recoupé selon son contenu.
-- La largeur du corps est de 1340px
-- unité utilisée le rem pour la taille des objets et em pour la police
+- La font Google Raleway est intégrable via une déclaration dans le head du html.
 
-Lien vers le site web: https://oliv134.github.io/OlivierPoteau_2_09112020/
+- Images, logo et favicon:  
+  Les Images contenues dans le dossier 4x sont de taille suffisante pour ce projet. Elles ont été renommées et contenues dans leur dossier respectif pictures/hosts, pictures/activities.  
+  le logo choisie est sa version png. Il a été croppé sous gimp pour retirer ses marges.
+
+- Breakpoints:
+..- Desktop: `(min-width: 1320 px)`.
+..- Tablet: `(min-width: 768px) and (max-width: 1319 px).`
+..- Smartphone: `(max-width: 1319 px)`.
+
+
+
+
