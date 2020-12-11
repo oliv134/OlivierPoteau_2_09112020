@@ -1,7 +1,4 @@
 @media screen and (max-width: 767px) {
-  .header,
-  .main {
-  }
   .header {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "logo . signup" "navbar navbar navbar";
@@ -12,12 +9,10 @@
   .header__nav {
     margin-left: -1rem;
     margin-right: -1rem;
-
   }
   .header__nav > a {
     border-top: none;
     border-bottom: 3px solid #f2f2f2;
-    width: 50%;
   }
   .header__nav > a[data-active="true"] {
     border-top: 0;
@@ -27,10 +22,9 @@
     border-top: 0;
     border-bottom-color: #0065fc;
   }
- 
+
   .search__form {
     width: 100%;
-
   }
   .search__input {
     width: 1rem;
@@ -56,14 +50,10 @@
   .result {
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: "popular" "hosting";
     gap: 0;
-  }
-  .result .spacer {
-    height: 1rem;
-    grid-area: spacer;
   }
   .search,
   .hosting,
@@ -72,22 +62,31 @@
   .footer {
     width: 100%;
     border-radius: 0;
-    padding: 1rem;
+    padding: 1.25rem;
   }
   .hosting {
     background-color: transparent;
   }
+  .hosting__card .card{
+    width: 100%;
+    flex: 1 0 auto;
+  }
+  .hosting__card .card__picture {
+    height: 7.125rem;
+    
+  }
   .hosting__card > .card a,
   .popular__card > .card a {
+    
     max-width: 100%;
   }
+
   .activity {
     margin-top: 1rem;
-   
   }
   .activity__card {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: unset;
     grid-template-rows: repeat(5, 12.25rem 2.5rem) 12.25rem;
     grid-template-areas: "A1" "." "A2" "." "A3" "." "A4" "." "A5" "." "A6";
     max-width: 100%;
@@ -95,18 +94,7 @@
   .activity__card .card__picture {
     width: 100%;
   }
-  .footer {
-    height: 100%;
-  }
   .footerContent {
-    max-width: 100%;
-    margin: auto;
-    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-   
-  }
-  .footerContentSection {
-    width: 100%;
   }
 }

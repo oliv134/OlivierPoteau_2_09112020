@@ -1,7 +1,4 @@
 @media screen and (min-width: 768px) and (max-width: 1320px) {
-  .header,
-  .main {
-  }
   .header {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -36,12 +33,9 @@
   .result {
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: "popular" "spacer" "hosting";
-  }
-  .result .spacer {
-    height: 1rem;
-    grid-area: spacer;
+    grid-template-columns: unset;
+    grid-template-rows: auto auto;
+    grid-template-areas: "popular" "hosting";
   }
   .search,
   .hosting,
@@ -50,19 +44,29 @@
   .footer {
     width: 100%;
     border-radius: 0;
-    padding: 1rem;
+    padding: 1.25rem;
   }
   .hosting {
     background-color: transparent;
   }
- 
+
+  .hosting__card > .card {
+    flex: 1 0 33%;
+  }
+  .hosting__card > .card a {
+    max-width: unset;
+  }
+   .hosting__more {
+     text-align: right;
+   }
   .popular__card {
     display: flex;
     flex-direction: row;
     gap: 1rem;
   }
-  .popular__card > .card{
-    max-width: 100%;
+  .hosting__card .card__picture {
+    height: 14rem;
+    
   }
   .popular__card > .card a {
     flex-direction: column;
@@ -79,15 +83,16 @@
   }
   .activity__card {
     display: grid;
-    grid-template-columns: auto 2.5rem auto;
-    grid-template-rows: 12.25rem 2.5rem 12.25rem 2.5rem 12.25rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 12.25rem 12.25rem 12.25rem;
     grid-template-areas:
-      "A1 . A2"
-      ". . ."
-      "A3 . A4"
-      ". . ."
-      "A5 . A6";
-    
+      "A1 A2"
+      "A3 A4"
+      "A5 A6";
+      gap: 2rem;
+  }
+  .activity__card > .card {
+    flex: 1 0 33.3333%;
   }
   .activity__card .card__picture {
     max-width: 100%;
