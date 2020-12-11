@@ -23,6 +23,7 @@
   .header__nav > a {
     border-top: none;
     border-bottom: 3px solid #f2f2f2;
+    flex: 1;
   }
   .header__nav > a[data-active="true"] {
     border-top: 0;
